@@ -111,3 +111,37 @@ body{
     text-align: center;
     margin: 20px 0;
 }
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap; /* permite quebra em linhas */
+    justify-content: center; /* centraliza os links */
+    gap: 10px; /* espaço entre os botões */
+    padding: 10px 20px; /* você pode ajustar se quiser */
+}
+
+/* Links dentro da nav-bar */
+.nav-bar .nav-btn {
+    flex: 1 1 auto; /* permite que os botões cresçam e encolham */
+    max-width: 150px; /* limite max pra ficar bonito */
+    text-align: center;
+    white-space: nowrap; /* evita que o texto quebre dentro do botão */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column; /* empilha os botões */
+        align-items: center; /* centraliza no eixo cruzado */
+        padding: 10px;
+    }
+    
+    .nav-bar .nav-btn {
+        max-width: 100%; /* botões ocupam toda largura */
+        margin: 5px 0; /* espaço vertical */
+    }
+}
+
+
+
+
