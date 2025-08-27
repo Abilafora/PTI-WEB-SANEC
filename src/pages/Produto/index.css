@@ -1,0 +1,183 @@
+/* Estilo base */
+body, .body {
+  background-color: #bc74ac;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.sesao-2 {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 20px;
+  justify-content: center;
+  background-color: #bc74ac;
+}
+
+.sesao-2 main {
+  display: flex;
+  flex-direction: row;
+  background-color: #403E90;
+  border-radius: 40px;
+  width: 80%;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.sesao-2 main .textos {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.sesao-2 main .imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 40px;
+  padding: 50px 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.sesao-2 main .imagem img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 40px;
+}
+
+/* Produtos */
+.produtos {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.produtos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.produtos-linha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.produto {
+  background: #ACC8E5;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 224px;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #bc74ac;
+}
+
+.descricao-produto {
+  text-align: center;
+  color: #403E90;
+  font-size: 16px;
+  margin: 0;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ACC8E5;
+  font-size: 15px;
+  font-weight: 300;
+  color: #403E90;
+  padding: 10px 20px;
+  border-radius: 150px;
+  text-decoration: none;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+  .sesao-2 {
+    padding: 60px 10px;
+  }
+
+  .sesao-2 main {
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+  }
+
+  .sesao-2 main .textos,
+  .sesao-2 main .imagem {
+    padding: 30px 15px;
+  }
+
+  .produtos-grid,
+  .produtos-linha {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .produto {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .botao {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sesao-2 {
+    padding: 40px 5px;
+  }
+
+  .sesao-2 main .textos,
+  .sesao-2 main .imagem {
+    padding: 20px 10px;
+  }
+
+  .produto {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .botao {
+    width: 100%;
+    max-width: 280px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,68 @@
+.sesao-2 {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 20px;
+  justify-content: center;
+  background-color: #bc74ac;
+}
+
+.sesao-2 main {
+  display: flex;
+  flex-direction: row;
+  background-color: #eed7c5;
+  border-radius: 40px;
+  width: 80%;
+  color: #403E90;
+  flex-wrap: wrap; /* Adicionado para melhorar responsividade */
+}
+
+.sesao-2 main .textos {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  flex: 1; /* Faz o texto ocupar o espaço disponível */
+  min-width: 250px;
+}
+
+.sesao-2 main .imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ACC8E5;
+  border-radius: 40px;
+  padding: 50px 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.sesao-2 main .imagem img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 40px;
+  
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ACC8E5;
+  font-size: 15px;
+  font-weight: 300;
+  color: #403E90;
+  padding: 10px 20px;
+  border-radius: 150px;
+  text-decoration: none;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #bc74ac; /* rosa */
+    margin: 0;
+}
+
+
